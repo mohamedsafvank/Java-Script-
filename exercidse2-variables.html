@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cart  Quantity</h1>
+    <button  onclick="
+        console.log(`Cart Quantity = ${cartQuantity}`);
+        
+    ">Show Quantity</button>
+    <button  onclick="
+        cartQuantity = cartQuantity+1;
+        // cartQuantity +=1 it is a short-cut for re-assigning
+        console.log(`Cart Quantity = ${cartQuantity}`);
+    ">Add To Cart</button>
+    <button onclick="
+        cartQuantity =cartQuantity + 2;
+        // cartQuantity +=2 it is a short-cut for re-assigning
+        console.log(`Cart Quantity = ${cartQuantity}`);
+    ">+2</button>
+    <button  onclick="
+         cartQuantity =cartQuantity + 3;
+         // cartQuantity +=3  it is a short-cut for re-assigning
+         console.log(`Cart Quantity = ${cartQuantity}`);
+    ">+3</button>
+    <button onclick="
+        console.log(`The Cart is Reseted`);
+        
+        cartQuantity = 0;
+        console.log(`Cart Quantity = ${cartQuantity}`);
+    ">Reset Cart</button>
+    <button onclick="        
+        cartQuantity -= 1;
+        console.log(`Cart Quantity = ${cartQuantity}`);
+    ">Remove From Cart</button>
+    <button onclick="        
+        cartQuantity -= 2;
+        console.log(`Cart Quantity = ${cartQuantity}`);
+    ">-2</button>
+    <button onclick="        
+        cartQuantity -= 3;
+        console.log(`Cart Quantity = ${cartQuantity}`);
+    ">-3</button>
+
+
+    <script>
+        let name = 'Mohamed safvan k';
+        console.log(`My name is:${name}`);
+
+        const cost = 5 + 3*2 + 9 ;
+        console.log(`Cost of Food:$${cost} `);
+
+        const tax = cost * 0.1 ;
+        console.log(`The tax of the Food:$${tax} `);
+        console.log(`The total Cost of the Food:$${tax + cost} `);
+
+         let cartQuantity = 0 ;
+
+        
+        
+    </script>
+</body>
+</html>
