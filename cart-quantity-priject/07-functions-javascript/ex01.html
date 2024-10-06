@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name){
+            if(!name === true){
+                console.log(`hello there`);  
+            }else{
+                console.log(`hello ${name}`);  
+            }
+           
+        }
+        greet();
+        greet();
+
+        function convertToFahrenheit(celsius){
+            return (celsius*9/5)+32;
+        }
+        console.log(convertToFahrenheit(25));
+        
+
+        function convertToCelsius(fahrenheit){
+            return (fahrenheit-32)*5/9;
+        }
+        console.log(convertToCelsius(86));
+
+        function convertLength(length , from ,to){
+            if(from === 'km'){
+                console.log(length /1.6 + " miles");
+                
+            } else{
+                console.log(length * 1.6 + " km");
+                
+            }
+            
+        }
+        convertLength(300 , 'km','miles');
+        convertLength(32 , 'km','miles');
+
+        function convertLength(length , from ,to){
+            if(from === 'km' && to == 'miles'){
+                console.log(length /1.6 + " miles");
+                
+            } else if(from === 'km' && to == 'feet'){
+                console.log(length * 3281 + " feet");
+                
+            }else if(from === 'miles' && to == 'km'){
+                console.log(length * 1.6 + " km");
+                
+            }else if(from === 'miles' && to == 'feet'){
+                console.log(length * 5280 + " feet");
+                
+            }else if(from === 'feet' && to == 'km'){
+                console.log(length / 3281 + " km");
+                
+            }else if(from === 'feet' && to == 'miles'){
+                console.log(length * 3281 + " miles");
+                
+            }else{
+                console.log(`Invalid unit`);
+                
+            }
+            
+        }
+        convertLength(32 , 'km','feet');
+
+        
+    </script>
+</body>
+</html>
